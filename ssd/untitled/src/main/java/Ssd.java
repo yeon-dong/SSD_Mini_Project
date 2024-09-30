@@ -22,6 +22,31 @@ public class Ssd {
         }
     }
 
+    public static void main(String[] args) {
+        Ssd ssd = new Ssd();
+
+            if (args.length == 0) {
+                System.out.println("INVALID COMMAND");
+                continue;
+            }
+
+            String command = args[0]; // 첫 번째 토큰은 명령어
+            int lba = Integer.parseInt(args[1]);
+            String data = args[2];
+            switch (command) {
+                case "W":
+                    ssd.write(lba, data);
+                    break;
+                case "R":
+                    ssd.read(lba);
+                    break;
+                default:
+                    System.out.println("INVALID COMMAND"); // 잘못된 명령어 처리
+            }
+
+
+    }
+
     //write
     public void write(int idx, String data) {
         if (idx < 0 || idx >= 100) { //배열 크기 벗어남 오류

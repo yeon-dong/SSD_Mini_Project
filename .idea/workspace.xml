@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d24bf1fb-ce74-4c37-8518-2f634b0ed029" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssd/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssd/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssd/untitled/.idea/artifacts/untitled_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssd/untitled/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssd/untitled/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testshell/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testshell/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testshell/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testshell/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testshell/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testshell/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ssd/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SSD_Mini_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ssd/.idea/SSD_Mini_Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ssd/.idea/git_toolbox_blame.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ssd/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ssd/untitled/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ssd/untitled/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ssd/untitled/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/git_toolbox_blame.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ssd/untitled/.idea/git_toolbox_blame.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ssd/untitled/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ssd/untitled/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/nand.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ssd/untitled/nand.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ssd/untitled/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ssd/untitled/result.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/Ssd.java" beforeDir="false" afterPath="$PROJECT_DIR$/ssd/untitled/src/main/java/Ssd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/TestScript.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/TestShell.java" beforeDir="false" afterPath="$PROJECT_DIR$/testshell/src/main/java/TestShell.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jsj7878&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/yeon-dong/SSD_Mini_Project.git&quot;,
+    &quot;accountId&quot;: &quot;1317c7b4-54fa-438b-9309-cbd0eeacc5d7&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2mlnh7RINq6DP0q7vP0WFQBw3Rh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "makeJar",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/github/SSD_Mini_Project/ssd",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\github\SSD_Mini_Project\ssd" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d24bf1fb-ce74-4c37-8518-2f634b0ed029" name="Changes" comment="" />
+      <created>1727660146569</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727660146569</updated>
+    </task>
+    <servers />
+  </component>
+</project>

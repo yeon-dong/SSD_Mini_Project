@@ -26,8 +26,10 @@ public class Ssd {
     public void write(int idx, String data) {
         if (idx < 0 || idx >= 100) { //배열 크기 벗어남 오류
             System.out.println("Error : Index out of bounds");
-        } else if (data.length() > 10) { //데이터 크기 벗어남 오류
+        } else if (data.length() != 10) { //데이터 크기 벗어남 오류
             System.out.println("Error : Data is out of size");
+        } else if (data.charAt(0) != '0' || data.charAt(1) != 'x') {
+            System.out.println("Error : Data type not allowed");
         } else {
             LBA[idx] = data; // 배열에 데이터 저장
             // 파일에 데이터 저장
@@ -68,6 +70,6 @@ public class Ssd {
             throw new RuntimeException("File does not exist");
         }
         String Line = stream.skip(0).findFirst().orElse("0x00000000");
-        System.out.println(Line);
+        System.out.print(Line);
     }
 }

@@ -9,8 +9,7 @@ public class TestShell {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in); // 사용자 입력을 위한 Scanner
-//        SSD ssd = new SSD(); // SSD 인스턴스 생성
-
+        Ssd ssd = new Ssd(); // SSD 인스턴스 생성
         while (true) {
             System.out.print("SHELL > ");
             String input = sc.nextLine(); // 사용자 입력 읽기
@@ -35,7 +34,7 @@ public class TestShell {
                     if (tokens.length == 3 && isValidLBA(tokens[1]) && isValidHex(tokens[2])) {
                         int lba = Integer.parseInt(tokens[1]);
                         String data = tokens[2];
-//                        ssd.write(lba, data);
+                        ssd.write(lba, data);
                     } else {
                         System.out.println("INVALID COMMAND");
                     }
@@ -44,7 +43,7 @@ public class TestShell {
                     // read 명령어 유효성 검사 및 실행
                     if (tokens.length == 2 && isValidLBA(tokens[1])) {
                         int lba = Integer.parseInt(tokens[1]);
-//                        ssd.read(lba);
+                        ssd.read(lba);
                     } else {
                         System.out.println("INVALID COMMAND");
                     }
@@ -53,7 +52,9 @@ public class TestShell {
                     // fullwrite 명령어 유효성 검사 및 실행
                     if (tokens.length == 2 && isValidHex(tokens[1])) {
                         String data = tokens[1];
-//                        ssd.fullWrite(data);
+                        for(int i = 0;i<100;i++){
+                            ssd.write(i, data);
+                        }
                     } else {
                         System.out.println("INVALID COMMAND");
                     }
@@ -61,7 +62,9 @@ public class TestShell {
                 case "fullread":
                     // fullread 명령어 실행
                     if (tokens.length == 1) {
-//                        ssd.fullRead();
+                        for(int i = 0;i<100;i++){
+                            ssd.read(i);
+                        }
                     } else {
                         System.out.println("INVALID COMMAND");
                     }

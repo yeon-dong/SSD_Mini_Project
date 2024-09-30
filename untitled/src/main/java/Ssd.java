@@ -2,6 +2,7 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
+import java.util.Objects;
 import java.util.stream.Stream;
 
 public class Ssd {
@@ -9,6 +10,7 @@ public class Ssd {
 
     // 생성자: 파일에서 기존 데이터를 읽어와서 LBA 배열에 저장
     public Ssd() {
+        Arrays.fill(LBA,"0x00000000");
         try (BufferedReader reader = new BufferedReader(new FileReader("nand.txt"))) {
             String line;
             int index = 0;
@@ -56,10 +58,8 @@ public class Ssd {
             throw new RuntimeException("File does not exist");
         }
         //LBA의 값을 result.txt에 쓰기
-        for(int i = 0 ; i< 100; i++){
-            String data =  LBA[i];
-            outputStream.println(data);
-        }
+        String data = LBA[idx];
+        outputStream.println(data);
         outputStream.close();
         Stream<String> stream = null;
         try{
@@ -67,7 +67,7 @@ public class Ssd {
         } catch (IOException e) {
             throw new RuntimeException("File does not exist");
         }
-        String Line = stream.skip(idx).findFirst().orElse("0x00000000");
+        String Line = stream.skip(0).findFirst().orElse("0x00000000");
         System.out.println(Line);
     }
 }

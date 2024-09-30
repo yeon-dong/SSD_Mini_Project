@@ -3,6 +3,6 @@ public class Main {
         Ssd SSD = new Ssd();
         SSD.write(1,"1");
         SSD.write(10,"1");
-
+        SSD.read(10);
     }
 }

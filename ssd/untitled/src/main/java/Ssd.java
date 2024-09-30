@@ -24,7 +24,7 @@ public class Ssd {
 
     public static void main(String[] args) {
         Ssd ssd = new Ssd();
-        while (true){
+
             if (args.length == 0) {
                 System.out.println("INVALID COMMAND");
                 continue;
@@ -43,7 +43,7 @@ public class Ssd {
                 default:
                     System.out.println("INVALID COMMAND"); // 잘못된 명령어 처리
             }
-        }
+
 
     }
 

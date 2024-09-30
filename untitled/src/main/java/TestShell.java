@@ -94,8 +94,8 @@ public class TestShell {
     // 도움말 정보 출력
     private static void printHelp() {
         System.out.println("Available commands:");
-        System.out.println("write <LBA> <data>");
-        System.out.println("read <LBA>");
+        System.out.println("W <LBA> <data>");
+        System.out.println("R <LBA>");
         System.out.println("fullwrite <data>");
         System.out.println("fullread");
         System.out.println("exit");

@@ -29,7 +29,7 @@ public class TestShell {
                 case "help":
                     printHelp(); // 도움말 출력
                     break;
-                case "write":
+                case "W":
                     // write 명령어 유효성 검사 및 실행
                     if (tokens.length == 3 && isValidLBA(tokens[1]) && isValidHex(tokens[2])) {
                         int lba = Integer.parseInt(tokens[1]);
@@ -39,11 +39,12 @@ public class TestShell {
                         System.out.println("INVALID COMMAND");
                     }
                     break;
-                case "read":
+                case "R":
                     // read 명령어 유효성 검사 및 실행
                     if (tokens.length == 2 && isValidLBA(tokens[1])) {
                         int lba = Integer.parseInt(tokens[1]);
                         ssd.read(lba);
+                        System.out.println();
                     } else {
                         System.out.println("INVALID COMMAND");
                     }

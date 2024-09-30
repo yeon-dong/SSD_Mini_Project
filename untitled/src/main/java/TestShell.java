@@ -29,10 +29,10 @@ public class TestShell {
                 case "help":
                     printHelp(); // 도움말 출력
                     break;
-                case "write":
+                case "W":
                     write(tokens, ssd);
                     break;
-                case "read":
+                case "R":
                     read(tokens, ssd);
                     break;
                 case "fullwrite":
@@ -44,11 +44,23 @@ public class TestShell {
                 case "testapp1":
                     fullwrite(tokens,ssd);
                     fullread(tokens, ssd);
-//                case "testapp2":
-//                    for(int i = 0 ; i<5;i++){
-//                        String [] input = {"write","0xAAAABBBB"};
-//                        write(input, ssd);
-//                    }
+                    break;
+                case "testapp2":
+                    for(int j =0;j<30;j++){
+                        for(int i = 0 ; i<5;i++){
+                            String [] testinput = {"W",i+"","0xAAAABBBB"};
+                            write(testinput, ssd);
+                        }
+                    }
+                    for(int i =0;i<5;i++){
+                        String [] testinput = {"w",i+"","0x12345678"};
+                        write(testinput, ssd);
+                    }
+                    for(int i =0;i<5;i++){
+                        String [] testinput = {"R",i+""};
+                        read(testinput,ssd);
+                    }
+                    break;
                 default:
                     System.out.println("INVALID COMMAND"); // 잘못된 명령어 처리
             }

@@ -30,45 +30,25 @@ public class TestShell {
                     printHelp(); // 도움말 출력
                     break;
                 case "write":
-                    // write 명령어 유효성 검사 및 실행
-                    if (tokens.length == 3 && isValidLBA(tokens[1]) && isValidHex(tokens[2])) {
-                        int lba = Integer.parseInt(tokens[1]);
-                        String data = tokens[2];
-                        ssd.write(lba, data);
-                    } else {
-                        System.out.println("INVALID COMMAND");
-                    }
+                    write(tokens, ssd);
                     break;
                 case "read":
-                    // read 명령어 유효성 검사 및 실행
-                    if (tokens.length == 2 && isValidLBA(tokens[1])) {
-                        int lba = Integer.parseInt(tokens[1]);
-                        ssd.read(lba);
-                    } else {
-                        System.out.println("INVALID COMMAND");
-                    }
+                    read(tokens, ssd);
                     break;
                 case "fullwrite":
-                    // fullwrite 명령어 유효성 검사 및 실행
-                    if (tokens.length == 2 && isValidHex(tokens[1])) {
-                        String data = tokens[1];
-                        for(int i = 0;i<100;i++){
-                            ssd.write(i, data);
-                        }
-                    } else {
-                        System.out.println("INVALID COMMAND");
-                    }
+                    fullwrite(tokens, ssd);
                     break;
                 case "fullread":
-                    // fullread 명령어 실행
-                    if (tokens.length == 1) {
-                        for(int i = 0;i<100;i++){
-                            ssd.read(i);
-                        }
-                    } else {
-                        System.out.println("INVALID COMMAND");
-                    }
+                    fullread(tokens, ssd);
                     break;
+                case "testapp1":
+                    fullwrite(tokens,ssd);
+                    fullread(tokens, ssd);
+//                case "testapp2":
+//                    for(int i = 0 ; i<5;i++){
+//                        String [] input = {"write","0xAAAABBBB"};
+//                        write(input, ssd);
+//                    }
                 default:
                     System.out.println("INVALID COMMAND"); // 잘못된 명령어 처리
             }
@@ -99,5 +79,49 @@ public class TestShell {
         System.out.println("fullread");
         System.out.println("exit");
         System.out.println("help");
+    }
+    //write 함수
+    private static void write(String[] tokens, Ssd ssd){
+        // write 명령어 유효성 검사 및 실행
+        if (tokens.length == 3 && isValidLBA(tokens[1]) && isValidHex(tokens[2])) {
+            int lba = Integer.parseInt(tokens[1]);
+            String data = tokens[2];
+            ssd.write(lba, data);
+        } else {
+            System.out.println("INVALID COMMAND");
+        }
+    }
+    //read 함수
+    private static void read(String[] tokens, Ssd ssd){
+        // read 명령어 유효성 검사 및 실행
+        if (tokens.length == 2 && isValidLBA(tokens[1])) {
+            int lba = Integer.parseInt(tokens[1]);
+            ssd.read(lba);
+        } else {
+            System.out.println("INVALID COMMAND");
+        }
+    }
+    //fullwrite 함수
+    private static void fullwrite(String[] tokens, Ssd ssd){
+        // fullwrite 명령어 유효성 검사 및 실행
+        if (tokens.length == 2 && isValidHex(tokens[1])) {
+            String data = tokens[1];
+            for(int i = 0;i<100;i++){
+                ssd.write(i, data);
+            }
+        } else {
+            System.out.println("INVALID COMMAND");
+        }
+    }
+    //fullread 함수
+    private static void fullread(String[] tokens, Ssd ssd){
+        // fullread 명령어 실행
+        if (tokens.length == 1) {
+            for(int i = 0;i<100;i++){
+                ssd.read(i);
+            }
+        } else {
+            System.out.println("INVALID COMMAND");
+        }
     }
 }

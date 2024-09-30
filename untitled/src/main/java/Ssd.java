@@ -51,23 +51,32 @@ public class Ssd {
         if (idx < 0 || idx >= LBA.length) {
             throw new IndexOutOfBoundsException("Index out of bounds: " + idx);
         }
+        String line = "0x00000000";
+        int cnt = 0;
+        try {
+            BufferedReader br = new BufferedReader(new FileReader("nand.txt"));
+            while(true){
+                line = br.readLine();
+                if(cnt == idx || line ==null){
+                    break;
+                }
+                cnt ++;
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+
         PrintWriter outputStream = null;
         try {
-            outputStream = new PrintWriter("./result.txt");
+            outputStream = new PrintWriter("result.txt");
         } catch (FileNotFoundException e) {
             throw new RuntimeException("File does not exist");
         }
         //LBA의 값을 result.txt에 쓰기
-        String data = LBA[idx];
-        outputStream.println(data);
+        outputStream.println(line);
         outputStream.close();
-        Stream<String> stream = null;
-        try{
-            stream = Files.lines(Path.of("./result.txt"));
-        } catch (IOException e) {
-            throw new RuntimeException("File does not exist");
-        }
-        String Line = stream.skip(0).findFirst().orElse("0x00000000");
-        System.out.println(Line);
+
+        System.out.println(line);
     }
 }

@@ -37,4 +37,5 @@ build/
 ### Mac OS ###
 .DS_Store
 
-.txt
+nand.txt
+result.txt
